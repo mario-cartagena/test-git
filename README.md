@@ -34,6 +34,13 @@ Existen dos estrategias de branching:
 2. Va a crear la rama develop: `git checkout -b develop`
 3. Agregar cambios mínimos.
 4. Desde la rama develop se ejecutan los pasos de "Subir cambios a un repositorio".
+5. Ir al repositorio remoto en GitHub, dándo click sobre el botón compare & pull Request
+6. Generamos el pull Request
+7. GitHub nos va a indicar si existen conflictos (si existen, se deben resolver)
+8. Una vez resueltos los conflictos realizamos el merge de develop a main y confirmamos el merge (todo esto pasa en la página de GitHub)
+9. En la terminal de VSC nos movemos a la rama main `git checkout main`
+10. Ejecutamos `git pull` para actualizar nuestro repositorio local.
+11. Configurar los colaboradores en el repositorio remoto.
 
 *Nota:*
-- `git reset`
+- `git reset`: para deshacer `git add`
