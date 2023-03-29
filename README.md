@@ -13,25 +13,27 @@
 - Ingresar a nuestra cuenta GitHub
 - Creamos un nuevo repositorio
 - Nos regresamos a la terminal del proyecto en VSC para ejecutar las tres últimas líneas que nos proporciona GitHub:
-    - git remote add origin git@github.com:WhitneySt/test-git.- git : Para apuntar al remoto
-    - git branch -M main: Para renombrar la rama principal de Master a main
-    - git push -u origin main: Se suben todos los archivos al repositorio remoto.
+    - `git remote add origin https://github.com/mario-cartagena/test-git.git`: Para apuntar al remoto
+    - `git branch -M main`: Para renombrar la rama principal de Master a main
+    - `git push -u origin main`: Se suben todos los archivos al repositorio remoto.
 
 ## Subir cambios a un repositorio
 1. Tener disponible una terminale n VSC
 2. Si queremos comprobar el estado de los archivos de nuestro proyecto: `git status`
 3. `git add .`
+4. `git commit -m "mensaje del commit"`
+5. `git push origin main o git push origin nombre_de_la_rama_actual`
 
 ## Trabajar con estrategias de branching
 Existen dos estrategias de branching: 
 1. Trunk-based: Cuando trabajamos de manera individual.
-2. Git Flow: Para trabajo colaborativo
+2. Git Flow: Para trabajo colaborativo.
 
 ## Trabajar con Git Flow
-1. Se ejecutan los pasos anteriores.
+1. Se ejecutan los pasos anteriores (Inicialización del repositorio)
 2. Va a crear la rama develop: `git checkout -b develop`
 3. Agregar cambios mínimos.
-4. Desde la rama develop se ejecutan los pasos de subir cambios a un repositorio.
+4. Desde la rama develop se ejecutan los pasos de "Subir cambios a un repositorio".
 
 *Nota:*
 - `git reset`
